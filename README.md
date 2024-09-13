@@ -1,5 +1,7 @@
-<h1 align="center">
+<p align="center">
   <img align="center" height=85px src="https://cdn-icons-png.flaticon.com/512/17765/17765734.png" />
+</p>
+<h1 align="center">
   <p>RSS Aggregator</p>
 </h1>
 
