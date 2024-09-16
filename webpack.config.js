@@ -50,7 +50,7 @@ const config = {
           {
             loader: "sass-loader",
           },
-          // Shut down warnings of depreciated SASS syntax
+          // Shuting down warnings of depreciated SASS syntax
           {
             loader: require.resolve("sass-loader"),
             options: {
@@ -62,6 +62,11 @@ const config = {
       {
         test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
         type: "asset",
+      },
+      // Loading image from <img> in html
+      {
+        test: /\.html$/i,
+        use: "html-loader",
       },
 
       // Add your rules for custom modules here
