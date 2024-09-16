@@ -21,17 +21,16 @@ Made using MVC design pattern.
 
 ### Main tech stack:
 
- - Webpack
- - SASS
- - Bootstrap
- - i18next
+<img align="center" height=30px src="https://webpack.js.org/assets/icon-square-small-slack.png" />  Webpack     
+<img align="center" height=30px src="https://sass-lang.com/assets/img/styleguide/seal-color.png" />  SASS     
+<img align="center" height=30px src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" />  Bootstrap    
+<img align="center" height=30px src="https://www.i18next.com/~gitbook/image?url=https%3A%2F%2F286188001-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-legacy-files%2Fo%2Fspaces%252F-L9iS6Wm2hynS5H9Gj7j%252Favatar.png%3Fgeneration%3D1523462254548780%26alt%3Dmedia&width=32&dpr=1&quality=100&sign=1467f54e&sv=1" />  i18next
 
 ## Run locally
 
     make install
 
     make develop
-
 ## Deploy
 
     make install
