@@ -11,5 +11,32 @@
 </p>
 
 <h3 align="center">
-  <a href="https://rss-aggregator-ainer.vercel.app/">See the demo</a>
+  <a href="https://rss-aggregator-ainer.vercel.app/">Website</a>
 </h3>
+
+## About
+Rss Reader is a service for aggregating RSS feeds, which makes it convenient to read various sources, such as blogs. It allows you to add an unlimited number of RSS feeds, updates them and adds new entries to the general flow.
+
+Made using MVC design pattern.
+
+### Main tech stack:
+
+ - Webpack
+ - SASS
+ - Bootstrap
+ - i18next
+
+## Run locally
+
+    make install
+
+    make develop
+
+## Deploy
+
+    make install
+
+    make build
+    
+Publish __dist__ directory.
+
