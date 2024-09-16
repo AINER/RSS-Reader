@@ -11,5 +11,5 @@
 </p>
 
 <h3 align="center">
-  <a href="https://github.com/AINER/frontend-project-11/actions">See the demo</a>
+  <a href="https://frontend-project-11-4ezl.vercel.app/">See the demo</a>
 </h3>
