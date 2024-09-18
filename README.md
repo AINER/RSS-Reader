@@ -31,11 +31,14 @@ Made using MVC design pattern.
     make install
 
     make develop
+
+After you can see automaticly opened site in your browser at __http://localhost:8080/__.
+    
 ## Deploy
 
     make install
 
     make build
     
-Publish __dist__ directory.
+Publish __dist__ directory to your hosting.
 
