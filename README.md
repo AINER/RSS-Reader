@@ -45,3 +45,4 @@ After you can see automaticly opened site in your browser at __http://localhost:
     
 Publish __dist__ directory to your hosting.
 
+ 
