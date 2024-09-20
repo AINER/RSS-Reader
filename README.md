@@ -32,7 +32,12 @@ Made using MVC design pattern.
 
  
 ## Launch
-Download or clone this repo, move to destination directory in your terminal.
+__Requirements:__
+- Linux system
+- NPM package manager
+- Make utility
+
+Download or clone this repo, move to repo directory in your terminal.
 
 ### Run locally
 Make following commands:
