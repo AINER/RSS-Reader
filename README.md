@@ -6,7 +6,7 @@
 </h1>
 
 <h3 align="center">
-  <a href="https://rss-aggregator-ainer.vercel.app/">Website</a>
+  <a href="https://rss-aggregator-ainer.vercel.app/">🌐 Website</a>
 </h3>
 
 ## About
@@ -34,8 +34,8 @@ Made using MVC design pattern.
 ## Launch
 __Requirements:__
 - Linux system
-- NPM package manager
 - Make utility
+- NPM package manager
 
 Download or clone this repo, move to repo directory in your terminal.
 
