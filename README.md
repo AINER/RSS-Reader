@@ -14,10 +14,10 @@ Rss Reader is a service for aggregating RSS feeds, which makes it convenient to 
 
  
 ## Development
-<p>
-  <a href="https://github.com/AINER/frontend-project-11/actions"><img src="https://github.com/AINER/frontend-project-11/actions/workflows/hexlet-check.yml/badge.svg" /></a>
-  <a href="https://codeclimate.com/github/AINER/frontend-project-11/maintainability"><img src="https://api.codeclimate.com/v1/badges/2a618e1d408cb5b3c1bd/maintainability" /></a>
-</p>
+[![Maintainability](https://api.codeclimate.com/v1/badges/2a618e1d408cb5b3c1bd/maintainability)](https://codeclimate.com/github/AINER/frontend-project-11/maintainability) 
+[![Linting](https://github.com/AINER/frontend-project-11/actions/workflows/makefile.yml/badge.svg)](https://github.com/AINER/frontend-project-11/actions/workflows/makefile.yml) 
+[![Hexlet-check](https://github.com/AINER/frontend-project-11/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/AINER/frontend-project-11/actions)
+
 Made using MVC design pattern.
 
 ### Main tech stack:
