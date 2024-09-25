@@ -1,7 +1,13 @@
+/* eslint-disable no-unused-vars */
+
+// Packages
 import "./styles.scss";
 import "bootstrap";
 
+// Images
 import bongoСatImage from "./assets/bongo-cat-typing.gif";
 import iconImage from "./assets/icon.png";
 
-console.log("trololo");
+import formApp from "./js/form/main";
+
+formApp();
