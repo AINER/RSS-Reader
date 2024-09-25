@@ -23,5 +23,5 @@ module.exports = {
   },
   rules: {
   },
-  ignores: [".config/*"],
+  ignorePatterns: ['dist', '*config*'],
 };
