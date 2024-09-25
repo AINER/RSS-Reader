@@ -3,7 +3,7 @@
 import * as yup from 'yup';
 import onChange from 'on-change';
 import render from './view';
-import insertExample from "./example";
+import insertExample from './example';
 
 export default () => {
   const elements = {
