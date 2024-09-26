@@ -37,11 +37,11 @@ Made using MVC design pattern.
 - Make utility
 - NPM package manager
 
+### How to launch
 Download or clone this repo, move to repo directory in your terminal.
 
-### How to launch
 #### Run locally
-Make following commands:
+Enter following commands:
 
     make install
 
@@ -50,7 +50,7 @@ Make following commands:
 After you can see automaticly opened site in your browser at __http://localhost:8080/__.
 
 #### Deploy
-Make following commands:
+Enter following commands:
 
     make install
 
