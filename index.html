@@ -123,17 +123,31 @@
         </div>
       </section>
     </main>
-    <footer class="footer border-top py-3 mt-5 bg-light">
-      <div class="container-xl">
-        <div class="text-center">
-          <img
-            class="decorative-img"
-            src="./src/assets/bongo-cat-typing.gif"
-            alt="bongo cat typing"
-          />
+
+    <footer class="footer container-fluid border-top py-3 mt-5 bg-light">
+      <div class="row">
+        <div class="col-auto me-auto">
+          <div class="mx-2 dropdown dropup">
+            <button class="language-current btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              English
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="language-english dropdown-item active disabled" href="#">English</a></li>
+              <li><a class="language-russian dropdown-item" href="#">Русский</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-auto">
+          <div class="text-right">
           <a class="made-by" href="https://github.com/AINER" target="_blank"
             >Made by AINER</a
           >
+            <img
+              class="decorative-img"
+              src="./src/assets/bongo_cat_typing.gif"
+              alt="bongo cat typing"
+            />
+          </div>
         </div>
       </div>
     </footer>
