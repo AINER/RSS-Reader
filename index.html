@@ -2,10 +2,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>RSS Aggregator |</title>
+    <title>RSS Aggregator</title>
     <link rel="icon" href="./src/assets/icon.png" type="image/x-icon">
   </head>
   <body class="d-flex flex-column min-vh-100">
+
     <div
       class="modal fade"
       id="modal"
@@ -46,17 +47,15 @@
         </div>
       </div>
     </div>
+
     <main class="flex-grow-1">
       <section class="container-fluid bg-light p-5">
         <div class="row">
           <div class="col-md-10 col-lg-8 mx-auto text-black">
             <div class="title text-center">
               <img class="logo" src="./src/assets/icon.png" alt="Logo" />
-              <h1 class="display-3 mb-0">RSS-агрегатор</h1>
-              <p class="lead">
-                Начните читать сегодня! Весь контент на кончиках ваших
-                пальцев.
-              </p>
+              <h1 class="hero-title display-3"></h1>
+              <p class="hero-description lead"></p>
             </div>
             <form action="" class="rss-form text-body">
               <div class="row">
@@ -72,14 +71,14 @@
                       placeholder="Cсылка RSS"
                       autocomplete="off"
                     />
-                    <label for="url-input">Ссылка RSS</label>
+                    <label class="url-input-label" for="url-input">Ссылка RSS</label>
                   </div>
                 </div>
                 <div class="col-auto">
                   <button
                     type="submit"
                     aria-label="add"
-                    class="url-submit h-100 btn btn-lg btn-primary px-sm-5"
+                    class="add url-submit h-100 btn btn-lg btn-primary px-sm-5"
                   >
                     Добавить
                   </button>
@@ -91,8 +90,8 @@
                 </div>
               </div>
             </form>
-            <p
-              class="example icon-link icon-link-hover"
+            <div
+              class="example-container icon-link icon-link-hover"
               style="--bs-icon-link-transform: translate3d(0, -0.125rem, 0)"
             >
               <svg
@@ -108,9 +107,9 @@
                   d="M4.854 1.146a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L4 2.707V12.5A2.5 2.5 0 0 0 6.5 15h8a.5.5 0 0 0 0-1h-8A1.5 1.5 0 0 1 5 12.5V2.707l3.146 3.147a.5.5 0 1 0 .708-.708z"
                 />
               </svg>
-              Пример:
-              <span class="example-link"><span/>
-            </p>
+              <span class="example-title"></span>
+              <span class="example-link"></span>
+            </di>
           </div>
         </div>
       </section>
@@ -139,9 +138,9 @@
         </div>
         <div class="col-auto">
           <div class="text-right">
-          <a class="made-by" href="https://github.com/AINER" target="_blank"
-            >Made by AINER</a
-          >
+            <a class="made-by" href="https://github.com/AINER" target="_blank"
+              >Made by AINER</a
+            >
             <img
               class="decorative-img"
               src="./src/assets/bongo_cat_typing.gif"
@@ -151,5 +150,6 @@
         </div>
       </div>
     </footer>
+
   </body>
 </html>
