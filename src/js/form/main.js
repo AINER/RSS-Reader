@@ -52,7 +52,8 @@ export default () => {
     const schema = yup
       .string()
       .trim()
-      .url('is-not-a-link')
+      .required('empty')
+      .url('is not a link')
       .notOneOf(trackedState.rssLinkForm.links, 'duplicated');
 
     schema
