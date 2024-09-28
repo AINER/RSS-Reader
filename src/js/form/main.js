@@ -38,16 +38,16 @@ export default () => {
     trackedState.rssLinkForm.errors = [];
   });
 
+  // BUG: scheme in listener doesn't see this const
   // const schema = yup
   //   .string()
   //   .trim()
-  //   .url()
-  //   .notOneOf(initState.rssLinkForm.links);
+  //   .required('empty')
+  //   .url('is not a link')
+  //   .notOneOf(trackedState.rssLinkForm.links, 'duplicated');
 
   elements.submit.addEventListener('click', (event) => {
     event.preventDefault();
-
-    // trackedState.rssLinkForm.status = 'sending';
 
     const schema = yup
       .string()
