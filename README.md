@@ -23,7 +23,7 @@ Made using MVC design pattern.
 ### Main tech stack:
 
 <img align="center" height=30px src="https://webpack.js.org/assets/icon-square-small-slack.png" />  Webpack    
-<img align="center" height=30px src="https://sass-lang.com/assets/img/styleguide/seal-color.png" />  Sass    
+<img align="center" height=30px src="https://sass-lang.com/assets/img/styleguide/seal-color.png" />  Sass   
 <img align="center" height=30px src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" />  Bootstrap   
 <img align="center" height=30px src="https://lodash.com/icons/apple-touch-180x180.png" />  Lodash   
 <img align="center" height=30px src="https://axios-http.com/assets/favicon.ico" />  AXIOS   
