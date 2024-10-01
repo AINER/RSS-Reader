@@ -2,15 +2,15 @@
 
 import * as yup from 'yup';
 import onChange from 'on-change';
-import render from './view';
-import insertExample from './example';
+import render from './input_render';
+import insertExample from './example_render';
 
 export default () => {
   const elements = {
     form: document.querySelector('.rss-form'),
     submit: document.querySelector('.url-submit'),
     input: document.querySelector('#url-input'),
-    errorMessage: document.querySelector('.invalid-feedback'),
+    feedback: document.querySelector('.feedback'),
   };
 
   // Uses MVC pattern
@@ -27,7 +27,7 @@ export default () => {
 
   // - View
 
-  insertExample();
+  insertExample(elements);
 
   const trackedState = onChange(state, render(elements));
 

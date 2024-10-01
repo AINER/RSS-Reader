@@ -10,27 +10,29 @@ export default (elements) => (path, value) => {
     if (value.includes('duplicated') || value.includes('is not a link') || value.includes('empty')) {
       elements.input.classList.add('is-invalid');
       elements.submit.classList.add('disabled');
+      elements.feedback.classList.add('invalid-feedback');
 
       if (value.includes('empty')) {
-        elements.errorMessage.textContent = i18next.t('rssUrlForm.errors.emptyInput');
+        elements.feedback.textContent = i18next.t('rssUrlForm.statusFeedback.errors.emptyInput');
         return;
       }
 
       if (value.includes('is not a link')) {
-        elements.errorMessage.textContent = i18next.t('rssUrlForm.errors.incorrectLink');
+        elements.feedback.textContent = i18next.t('rssUrlForm.statusFeedback.errors.incorrectLink');
         return;
       }
 
       if (value.includes('duplicated')) {
-        elements.errorMessage.textContent = i18next.t('rssUrlForm.errors.duplicatedLink');
+        elements.feedback.textContent = i18next.t('rssUrlForm.statusFeedback.errors.duplicatedLink');
         return;
       }
     }
 
     if (_.isEmpty(value)) {
       elements.submit.classList.remove('disabled');
-      elements.input.classList.remove('is-invalid');
-      elements.errorMessage.textContent = '';
+      elements.input.classList.remove('is-invalid', 'is-valid');
+      elements.feedback.classList.remove('invalid-feedback', 'valid-feedback');
+      elements.feedback.textContent = '';
 
       return;
     }
@@ -38,6 +40,9 @@ export default (elements) => (path, value) => {
     console.log('😅');
     elements.form.reset();
     elements.input.focus();
+    elements.input.classList.add('is-valid');
+    elements.feedback.classList.add('valid-feedback');
+    elements.feedback.textContent = i18next.t('rssUrlForm.statusFeedback.success');
   };
 
   render();

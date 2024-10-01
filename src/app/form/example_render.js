@@ -1,4 +1,6 @@
-export default () => {
+/* eslint-disable no-param-reassign */
+
+export default (elements) => {
   const exampleLink = 'https://lorem-rss.hexlet.app/feed';
 
   const exampleLinkElement = document.querySelector('.example-link');
@@ -9,5 +11,9 @@ export default () => {
 
   exampleElement.addEventListener('click', () => {
     inputElement.value = exampleLink;
+    elements.submit.classList.remove('disabled');
+    elements.input.classList.remove('is-invalid', 'is-valid');
+    elements.feedback.classList.remove('invalid-feedback', 'valid-feedback');
+    elements.feedback.textContent = '';
   });
 };
