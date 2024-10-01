@@ -1,10 +1,14 @@
+<!doctype html>
+
 <html lang="ru" data-lt-installed="true">
+
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>RSS Aggregator</title>
     <link rel="icon" href="./src/assets/icon.png" type="image/x-icon">
   </head>
+
   <body class="d-flex flex-column min-vh-100">
 
     <div
@@ -72,21 +76,17 @@
                       autocomplete="off"
                     />
                     <label class="url-input-label" for="url-input">Ссылка RSS</label>
+                    <div class="feedback"></div>
                   </div>
                 </div>
                 <div class="col-auto">
                   <button
                     type="submit"
                     aria-label="add"
-                    class="add url-submit h-100 btn btn-lg btn-primary px-sm-5"
+                    class="add url-submit btn btn-lg btn-primary px-sm-5"
                   >
                     Добавить
                   </button>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col">
-                  <div class="invalid-feedback"></div>
                 </div>
               </div>
             </form>
@@ -109,7 +109,7 @@
               </svg>
               <span class="example-title"></span>
               <span class="example-link"></span>
-            </di>
+            </div>
           </div>
         </div>
       </section>
