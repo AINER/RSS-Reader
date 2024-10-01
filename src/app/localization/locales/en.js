@@ -8,10 +8,13 @@ export default {
     rssUrlForm: {
       label: 'RSS link',
       button: 'Add',
-      errors: {
-        emptyInput: 'Enter a link',
-        incorrectLink: 'This is not a link',
-        duplicatedLink: 'This link is already added',
+      statusFeedback: {
+        success: 'RSS channel added',
+        errors: {
+          emptyInput: 'Enter a link',
+          incorrectLink: 'This is not a link',
+          duplicatedLink: 'This link is already added',
+        },
       },
       example: 'Example:',
     },
