@@ -23,6 +23,16 @@ const renderLocalization = () => {
   inputExample.textContent = i18next.t('rssUrlForm.example');
 
   languageDropdownButton.textContent = i18next.t('currentLanguage');
+  switch (i18next.language) {
+    case 'en':
+      enLanguageSwitcher.classList.add('active', 'disabled');
+      break;
+    case 'ru':
+      ruLanguageSwitcher.classList.add('active', 'disabled');
+      break;
+    default:
+      console.error('Undefined language');
+  }
   madeBY.textContent = i18next.t('footer.madeBy');
 };
 

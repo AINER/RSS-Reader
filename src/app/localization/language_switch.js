@@ -1,24 +1,24 @@
 import i18next from 'i18next';
 
 export default () => {
-  const languageEnglishSwitch = document.querySelector('.language-english');
-  const languageRussianSwitch = document.querySelector('.language-russian');
+  const enLanguageSwitcher = document.querySelector('.language-en');
+  const ruLanguageSwitcher = document.querySelector('.language-ru');
 
-  languageEnglishSwitch.addEventListener('click', () => {
+  enLanguageSwitcher.addEventListener('click', () => {
     i18next.changeLanguage('en');
 
-    languageEnglishSwitch.classList.add('active', 'disabled');
-    languageEnglishSwitch.setAttribute('aria-current', 'true');
-    languageRussianSwitch.classList.remove('active', 'disabled');
-    languageRussianSwitch.removeAttribute('aria-current');
+    enLanguageSwitcher.classList.add('active', 'disabled');
+    enLanguageSwitcher.setAttribute('aria-current', 'true');
+    ruLanguageSwitcher.classList.remove('active', 'disabled');
+    ruLanguageSwitcher.removeAttribute('aria-current');
   });
 
-  languageRussianSwitch.addEventListener('click', () => {
+  ruLanguageSwitcher.addEventListener('click', () => {
     i18next.changeLanguage('ru');
 
-    languageEnglishSwitch.classList.remove('active', 'disabled');
-    languageEnglishSwitch.removeAttribute('aria-current');
-    languageRussianSwitch.classList.add('active', 'disabled');
-    languageRussianSwitch.setAttribute('aria-current', 'true');
+    enLanguageSwitcher.classList.remove('active', 'disabled');
+    enLanguageSwitcher.removeAttribute('aria-current');
+    ruLanguageSwitcher.classList.add('active', 'disabled');
+    ruLanguageSwitcher.setAttribute('aria-current', 'true');
   });
 };
