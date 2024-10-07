@@ -31,7 +31,7 @@ Made using MVC design pattern.
 <img align="center" height=30px src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/ESLint_logo.svg/1200px-ESLint_logo.svg.png" />  ESLint   
 
  
-## Launch
+## Launch at yours host
 ### Requirements
 - Linux system
 - Make utility
