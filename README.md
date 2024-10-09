@@ -21,6 +21,15 @@ Rss Reader is a service for aggregating RSS feeds, which makes it convenient to 
 Made using MVC design pattern.
 
 ### Main tech stack:
+<a href="https://webpack.js.org/"><img height=28px src="https://img.shields.io/badge/Webpack-white?logo=webpack" alt="Webpack"></a> 
+<a href="https://sass-lang.com/"><img height=28px src="https://img.shields.io/badge/Sass-white?logo=sass" alt="Sass"></a> 
+<a href="https://getbootstrap.com/"><img height=28px src="https://img.shields.io/badge/Bootstrap-white?logo=bootstrap" alt="Bootstrap"></a> 
+<a href="https://lodash.com/"><img height=28px src="https://img.shields.io/badge/Lodash-white?logo=Lodash" alt="Lodash"></a> 
+<a href="https://axios-http.com/"><img height=28px src="https://img.shields.io/badge/AXIOS-white?logo=axios&logoColor=5a29e4" alt="AXIOS"></a> 
+<a href="https://www.i18next.com/"><img height=28px src="https://img.shields.io/badge/i18next-white?logo=i18next" alt="i18next"></a> 
+<a href="https://eslint.org/"><img height=28px src="https://img.shields.io/badge/ESLint-white?logo=eslint&logoColor=4b2ec7" alt="ESLint"></a> 
+
+<!---
 <a href="https://webpack.js.org/"><img height=40px src="https://img.shields.io/badge/Webpack-white?style=for-the-badge&logo=webpack" alt="Webpack"></a>
 <a href="https://sass-lang.com/"><img height=40px src="https://img.shields.io/badge/Sass-white?style=for-the-badge&logo=sass" alt="Sass"></a>
 <a href="https://getbootstrap.com/"><img height=40px src="https://img.shields.io/badge/Bootstrap-white?style=for-the-badge&logo=bootstrap" alt="Bootstrap"></a>
@@ -28,6 +37,7 @@ Made using MVC design pattern.
 <a href="https://axios-http.com/"><img height=40px src="https://img.shields.io/badge/AXIOS-white?style=for-the-badge&logo=axios&logoColor=5a29e4" alt="AXIOS"></a>
 <a href="https://www.i18next.com/"><img height=40px src="https://img.shields.io/badge/i18next-white?style=for-the-badge&logo=i18next" alt="i18next"></a>
 <a href="https://eslint.org/"><img height=40px src="https://img.shields.io/badge/ESLint-white?style=for-the-badge&logo=eslint&logoColor=4b2ec7" alt="ESLint"></a>
+-->
 
 <!---
 <img align="center" height=30px src="https://webpack.js.org/assets/icon-square-small-slack.png" />  Webpack    
