@@ -14,9 +14,16 @@ export default {
           emptyInput: 'Введите ссылку',
           incorrectLink: 'Это не ссылка',
           duplicatedLink: 'Эта ссылка уже добавлена',
+          unsuccessfulRSSParsing: 'Не удалось загрузить RSS-канал. Проверьте ссылку.',
         },
       },
       example: 'Пример:',
+    },
+    channelsAndPosts: {
+      postsTitle: 'Посты',
+      originalPostButton: 'Открыть источник',
+      markAsReadButton: 'Пометить прочитанным',
+      channelsTitle: 'Каналы',
     },
     footer: {
       madeBy: 'Накодил AINER',

@@ -113,12 +113,51 @@
           </div>
         </div>
       </section>
-      <section class="container-fluid container-xxl p-5">
-        <div class="row">
-          <div class="col-md-10 col-lg-8 order-1 mx-auto posts"></div>
+      </div>
+
+      <section class="channels-and-posts d-none container-fluid container-xxl p-5">
+        <div class="row gx-5">
+          <div class="col-md-10 col-lg-8 order-1 mx-auto">
+            <h2 class="posts-title h3 my-4"></h2>
+            <div class="posts">
+
+              <template id="post-card">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row align-items-center">
+                      <div class="col">
+                        <h5 class="card-title">Card title</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                      </div>
+                      <div class="col-auto">
+                        <a class="original-post-link" href=""><button type="button" class="original-post-button btn btn-outline-secondary btn-sm align-middle"></button></a>
+                        <button type="button" class="mark-as-read-button btn btn-outline-secondary btn-sm align-middle"></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </template>
+
+            </div>
+          </div>
+
           <div
-            class="col-md-10 col-lg-4 mx-auto order-0 order-lg-1 feeds"
-          ></div>
+            class="col-md-10 col-lg-4 order-0 order-lg-1 mx-auto"
+          >
+            <h2 class="channels-title h3 my-4"></h2>
+            <div class="channels">
+
+              <template id="channel-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                  </div>
+                </div>
+              </template>
+
+            </div>
+          </div>
         </div>
       </section>
     </main>

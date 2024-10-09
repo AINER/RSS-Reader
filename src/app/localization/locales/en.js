@@ -9,14 +9,21 @@ export default {
       label: 'RSS link',
       button: 'Add',
       statusFeedback: {
-        success: 'RSS channel added',
+        success: 'RSS feed added',
         errors: {
           emptyInput: 'Enter a link',
           incorrectLink: 'This is not a link',
           duplicatedLink: 'This link is already added',
+          unsuccessfulRSSParsing: 'Failed to load RSS feed. Check the link.',
         },
       },
       example: 'Example:',
+    },
+    channelsAndPosts: {
+      postsTitle: 'Posts',
+      originalPostButton: 'Open source',
+      markAsReadButton: 'Mark as read',
+      channelsTitle: 'Feeds',
     },
     footer: {
       madeBy: 'Made by AINER',
