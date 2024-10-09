@@ -31,7 +31,7 @@ a {
 }
 
 .decorative-img {
-  height: 45px;
+  height: 40px;
   border-radius: 15px;
   margin: 0 15px;
 }
@@ -67,12 +67,14 @@ a {
   --bs-btn-disabled-bg: #ff9b6d;
   --bs-btn-disabled-border-color: #ff9b6d;
 
-  height: calc(3.5rem + var(--bs-border-width) * 2);
-  min-height: calc(3.5rem + var(--bs-border-width) * 2);
-
   &:hover {
     box-shadow: 0 0 10px 1px #00000025;
   }
+}
+
+.add {
+  height: calc(3.5rem + var(--bs-border-width) * 2);
+  min-height: calc(3.5rem + var(--bs-border-width) * 2);
 }
 
 .form-control:focus {
@@ -106,7 +108,12 @@ a {
 
 .feedback {
   display: block;
-  margin-left: 12px;
+  padding: 6px 12px;
+  text-wrap: wrap;
+}
+
+.channels-and-posts {
+  margin-bottom: 50px;
 }
 
 .dropdown {
@@ -129,5 +136,19 @@ a {
     .active {
       background: #ffa880;
     }
+  }
+}
+
+.footer .col-auto {
+  padding: 0;
+}
+
+.card {
+  transition: 0.2s;
+  &:hover {
+    background: rgb(240, 240, 240);
+  }
+  &:active {
+    background: rgb(221, 221, 221);
   }
 }

@@ -53,66 +53,67 @@
     </div>
 
     <main class="flex-grow-1">
-      <section class="container-fluid bg-light p-5">
-        <div class="row">
-          <div class="col-md-10 col-lg-8 mx-auto text-black">
-            <div class="title text-center">
-              <img class="logo" src="./src/assets/icon.png" alt="Logo" />
-              <h1 class="hero-title display-3"></h1>
-              <p class="hero-description lead"></p>
-            </div>
-            <form action="" class="rss-form text-body">
-              <div class="row">
-                <div class="col">
-                  <div class="form-floating">
-                    <input
-                      class="form-control w-100"
-                      id="url-input"
-                      autofocus=""
-                      required=""
-                      name="url"
-                      aria-label="url"
-                      placeholder="Cсылка RSS"
-                      autocomplete="off"
-                    />
-                    <label class="url-input-label" for="url-input">Ссылка RSS</label>
-                    <div class="feedback"></div>
+      <div class="bg-light">
+        <section class="container-fluid container-xxl p-5">
+          <div class="row">
+            <div class="col mx-auto text-black">
+              <div class="title text-center">
+                <img class="logo" src="./src/assets/icon.png" alt="Logo" />
+                <h1 class="hero-title display-3"></h1>
+                <p class="hero-description lead"></p>
+              </div>
+              <form action="" class="rss-form text-body">
+                <div class="row">
+                  <div class="col">
+                    <div class="form-floating">
+                      <input
+                        class="form-control w-100"
+                        id="url-input"
+                        autofocus=""
+                        required=""
+                        name="url"
+                        aria-label="url"
+                        placeholder="Cсылка RSS"
+                        autocomplete="off"
+                      />
+                      <label class="url-input-label" for="url-input">Ссылка RSS</label>
+                      <div class="feedback"></div>
+                    </div>
+                  </div>
+                  <div class="col-auto">
+                    <button
+                      type="submit"
+                      aria-label="add"
+                      class="add url-submit btn btn-lg btn-primary px-sm-5"
+                    >
+                      Добавить
+                    </button>
                   </div>
                 </div>
-                <div class="col-auto">
-                  <button
-                    type="submit"
-                    aria-label="add"
-                    class="add url-submit btn btn-lg btn-primary px-sm-5"
-                  >
-                    Добавить
-                  </button>
-                </div>
-              </div>
-            </form>
-            <div
-              class="example-container icon-link icon-link-hover"
-              style="--bs-icon-link-transform: translate3d(0, -0.125rem, 0)"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-arrow-90deg-up"
-                viewBox="0 0 16 16"
+              </form>
+              <div
+                class="example-container icon-link icon-link-hover"
+                style="--bs-icon-link-transform: translate3d(0, -0.125rem, 0)"
               >
-                <path
-                  fill-rule="evenodd"
-                  d="M4.854 1.146a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L4 2.707V12.5A2.5 2.5 0 0 0 6.5 15h8a.5.5 0 0 0 0-1h-8A1.5 1.5 0 0 1 5 12.5V2.707l3.146 3.147a.5.5 0 1 0 .708-.708z"
-                />
-              </svg>
-              <span class="example-title"></span>
-              <span class="example-link"></span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-90deg-up"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.854 1.146a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L4 2.707V12.5A2.5 2.5 0 0 0 6.5 15h8a.5.5 0 0 0 0-1h-8A1.5 1.5 0 0 1 5 12.5V2.707l3.146 3.147a.5.5 0 1 0 .708-.708z"
+                  />
+                </svg>
+                <span class="example-title"></span>
+                <span class="example-link"></span>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
       </div>
 
       <section class="channels-and-posts d-none container-fluid container-xxl p-5">
@@ -162,7 +163,7 @@
       </section>
     </main>
 
-    <footer class="footer container-fluid border-top py-3 mt-5 bg-light">
+    <footer class="footer fixed-bottom container-fluid border-top py-2 mt-5 bg-light">
       <div class="row">
         <div class="col-auto me-auto">
           <div class="mx-2 dropdown dropup">
@@ -170,13 +171,13 @@
               English
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><a class="language-english dropdown-item active disabled" href="#">English</a></li>
-              <li><a class="language-russian dropdown-item" href="#">Русский</a></li>
+              <li><a class="language language-en dropdown-item" href="#">English</a></li>
+              <li><a class="language language-ru dropdown-item" href="#">Русский</a></li>
             </ul>
           </div>
         </div>
         <div class="col-auto">
-          <div class="text-right">
+          <div class="text-end">
             <a class="made-by" href="https://github.com/AINER" target="_blank"
               >Made by AINER</a
             >
