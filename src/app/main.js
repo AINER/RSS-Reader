@@ -2,13 +2,14 @@
 
 import * as yup from 'yup';
 import onChange from 'on-change';
+import { v4 as uuidv4 } from 'uuid';
+
 import renderForm from './form/renderer';
 import insertExample from './form/example_renderer';
 
 import load from './rss_feeds/data_loader';
 import parse from './rss_feeds/xml_parser';
 import renderChannelsAndPosts from './rss_feeds/renderer';
-import { v4 as uuidv4 } from 'uuid';
 
 // - Model
 import state from './state';

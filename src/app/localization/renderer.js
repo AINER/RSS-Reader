@@ -57,7 +57,7 @@ export default () => {
       ruLanguageSwitcher.classList.add('active', 'disabled');
       break;
     default:
-      console.error('Undefined language');
+      throw new Error('Undefined language');
   }
 
   const madeBY = document.querySelector('.made-by');
