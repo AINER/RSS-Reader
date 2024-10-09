@@ -21,7 +21,15 @@ Rss Reader is a service for aggregating RSS feeds, which makes it convenient to 
 Made using MVC design pattern.
 
 ### Main tech stack:
+<a href="https://webpack.js.org/"><img height=40px src="https://img.shields.io/badge/Webpack-white?style=for-the-badge&logo=webpack" alt="Webpack"></a>
+<a href="https://sass-lang.com/"><img height=40px src="https://img.shields.io/badge/Sass-white?style=for-the-badge&logo=sass" alt="Sass"></a>
+<a href="https://getbootstrap.com/"><img height=40px src="https://img.shields.io/badge/Bootstrap-white?style=for-the-badge&logo=bootstrap" alt="Bootstrap"></a>
+<a href="https://lodash.com/"><img height=40px src="https://img.shields.io/badge/Lodash-white?style=for-the-badge&logo=Lodash" alt="Lodash"></a>
+<a href="https://axios-http.com/"><img height=40px src="https://img.shields.io/badge/AXIOS-white?style=for-the-badge&logo=axios&logoColor=5a29e4" alt="AXIOS"></a>
+<a href="https://www.i18next.com/"><img height=40px src="https://img.shields.io/badge/i18next-white?style=for-the-badge&logo=i18next" alt="i18next"></a>
+<a href="https://eslint.org/"><img height=40px src="https://img.shields.io/badge/ESLint-white?style=for-the-badge&logo=eslint&logoColor=4b2ec7" alt="ESLint"></a>
 
+<!---
 <img align="center" height=30px src="https://webpack.js.org/assets/icon-square-small-slack.png" />  Webpack    
 <img align="center" height=30px src="https://sass-lang.com/assets/img/styleguide/seal-color.png" />  Sass   
 <img align="center" height=30px src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" />  Bootstrap   
@@ -29,7 +37,7 @@ Made using MVC design pattern.
 <img align="center" height=30px src="https://axios-http.com/assets/favicon.ico" />  AXIOS   
 <img align="center" height=30px src="https://www.i18next.com/~gitbook/image?url=https%3A%2F%2F286188001-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-legacy-files%2Fo%2Fspaces%252F-L9iS6Wm2hynS5H9Gj7j%252Favatar.png%3Fgeneration%3D1523462254548780%26alt%3Dmedia&width=32&dpr=1&quality=100&sign=1467f54e&sv=1" /> i18next   
 <img align="center" height=30px src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/ESLint_logo.svg/1200px-ESLint_logo.svg.png" />  ESLint   
-
+-->
  
 ## Launch at yours host
 ### Requirements
