@@ -2,7 +2,6 @@
 
 import * as yup from 'yup';
 import onChange from 'on-change';
-import { v4 as uuidv4 } from 'uuid';
 
 import renderForm from './form/renderer';
 import insertExample from './form/example_renderer';
