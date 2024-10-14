@@ -62,25 +62,9 @@ export default () => {
         currentUrl = url;
       })
       .then(() => load(currentUrl))
-      .then((string) => parse(string))
-      .then((xmlDocument) => {
-        const items = Array.from(xmlDocument.querySelectorAll('item'));
-        const posts = items.map((item) => (
-          {
-            title: item.childNodes[0].textContent,
-            description: item.childNodes[1].textContent,
-            publicationDate: item.childNodes[5].textContent,
-            originalPostLink: item.childNodes[2].textContent,
-            creator: item.childNodes[4].textContent,
-            id: uuidv4(),
-          }));
-
-        trackedStateForChannels.rssChannels.push({
-          url: currentUrl,
-          title: xmlDocument.documentElement.childNodes[0].childNodes[0].textContent,
-          description: xmlDocument.documentElement.childNodes[0].childNodes[1].textContent,
-          posts,
-        });
+      .then((xmlString) => parse(xmlString, currentUrl))
+      .then((channel) => {
+        trackedStateForChannels.rssChannels.push(channel);
       })
       .catch((error) => {
         trackedState.errors = error.errors;
