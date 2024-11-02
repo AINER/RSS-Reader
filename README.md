@@ -18,7 +18,7 @@ Rss Reader is a service for aggregating RSS feeds, which makes it convenient to 
 [![Linting](https://github.com/AINER/frontend-project-11/actions/workflows/makefile.yml/badge.svg)](https://github.com/AINER/frontend-project-11/actions/workflows/makefile.yml) 
 [![Hexlet-check](https://github.com/AINER/frontend-project-11/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/AINER/frontend-project-11/actions)
 
-Made using MVC design pattern.
+Made using <a href="https://en.m.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller">MVC design pattern</a>.
 
 ### Main tech stack:
 <a href="https://webpack.js.org/"><img height=28px src="https://img.shields.io/badge/Webpack-white?logo=webpack" alt="Webpack"></a> 
