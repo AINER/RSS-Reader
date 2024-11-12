@@ -3,7 +3,7 @@ export default {
     currentLanguage: 'English',
     heroSection: {
       title: 'RSS Aggregator',
-      description: 'Start reading news today! All content at your fingertips.',
+      description: 'All content at your fingertips. Start reading today!',
     },
     rssUrlForm: {
       label: 'RSS link',

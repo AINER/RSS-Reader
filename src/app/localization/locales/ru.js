@@ -3,7 +3,7 @@ export default {
     currentLanguage: 'Русский',
     heroSection: {
       title: 'RSS-агрегатор',
-      description: 'Начните читать новости уже сегодня! Весь контент на кончиках ваших пальцев.',
+      description: 'Весь контент на кончиках ваших пальцев. Начните читать уже сегодня!',
     },
     rssUrlForm: {
       label: 'Ссылка RSS',
