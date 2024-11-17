@@ -5,6 +5,7 @@ import en from './locales/en';
 import ru from './locales/ru';
 
 import renderLocalization from './renderer';
+import activateLanguageSwitcher from './language_switcher';
 
 export default async () => {
   await i18next.use(LanguageDetector).init({
@@ -17,6 +18,7 @@ export default async () => {
   });
 
   renderLocalization();
+  activateLanguageSwitcher();
 
   i18next.on('languageChanged', () => {
     renderLocalization();

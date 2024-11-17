@@ -3,7 +3,7 @@
 import i18next from 'i18next';
 import _ from 'lodash';
 
-export default (elements) => (path, value) => {
+export default (elements, value) => {
   const render = () => {
     if (
       value === undefined

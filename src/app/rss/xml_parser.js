@@ -12,7 +12,9 @@ export default (xmlString, channelUrl) => {
       publicationDate: item.querySelector('pubDate').textContent,
       originalPostLink: item.querySelector('link').textContent,
       creator: item.querySelector('creator').textContent,
+
       id: uuidv4(),
+      read: false,
     }));
 
   const result = {

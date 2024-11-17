@@ -21,9 +21,10 @@ export default {
     },
     channelsAndPosts: {
       postsTitle: 'Посты',
-      originalPostButton: 'Открыть источник',
-      markAsReadButton: 'Пометить прочитанным',
+      originalPostButton: '🌐 Открыть источник',
+      // markAsReadButton: '🔖 Пометить прочитанным',
       channelsTitle: 'Каналы',
+      modalCloseButton: 'Закрыть',
     },
     footer: {
       madeBy: 'Накодил AINER',

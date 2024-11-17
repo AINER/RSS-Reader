@@ -27,8 +27,9 @@ export default () => {
   const postCardTemplate = document.querySelector('#post-card');
   const originalPostButtonInTemplate = postCardTemplate.content.querySelector('.original-post-button');
   originalPostButtonInTemplate.textContent = i18next.t('channelsAndPosts.originalPostButton');
-  const markAsReadButtonInTemplate = postCardTemplate.content.querySelector('.mark-as-read-button');
-  markAsReadButtonInTemplate.textContent = i18next.t('channelsAndPosts.markAsReadButton');
+  // const markAsReadButtonInTemplate = postCardTemplate.content
+  //   .querySelector('.mark-as-read-button');
+  // markAsReadButtonInTemplate.textContent = i18next.t('channelsAndPosts.markAsReadButton');
   // Rendering of buttons in DOM (after sending from template)
   // after switching of localization
   const originalPostButton = document.querySelectorAll('.original-post-button');
@@ -37,11 +38,14 @@ export default () => {
     originalPostButton.forEach((element) => {
       element.textContent = i18next.t('channelsAndPosts.originalPostButton');
     });
-    const markAsReadButton = document.querySelectorAll('.mark-as-read-button');
-    markAsReadButton.forEach((element) => {
-      element.textContent = i18next.t('channelsAndPosts.markAsReadButton');
-    });
+    // const markAsReadButton = document.querySelectorAll('.mark-as-read-button');
+    // markAsReadButton.forEach((element) => {
+    //   element.textContent = i18next.t('channelsAndPosts.markAsReadButton');
+    // });
   }
+
+  const modalCloseButton = document.querySelector('.modal__close-button');
+  modalCloseButton.textContent = i18next.t('channelsAndPosts.modalCloseButton');
 
   // --- Footer section ---
   const languageDropdownButton = document.querySelector('.language-current');

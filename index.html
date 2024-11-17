@@ -13,16 +13,16 @@
 
     <div
       class="modal fade"
-      id="modal"
+      id="post-modal"
       tabindex="-1"
       role="dialog"
       aria-labelledby="modal"
-      aria-hidden="true"
+      aria-hidden="false"
     >
-      <div class="modal-dialog" role="document">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title"></h5>
+            <h5 class="modal-title fw-bold"></h5>
             <button
               type="button"
               class="btn-close close"
@@ -30,19 +30,30 @@
               aria-label="Close"
             ></button>
           </div>
-          <div class="modal-body text-break"></div>
+          <div class="modal-body text-break">
+            <div class="modal__content"></div>
+            <div class="'modal__info">
+              <div class="d-flex justify-content-between">
+                <p class="modal__post-author fst-italic text-muted"></p>
+                <p class="modal__post-date fst-italic text-muted"></p>
+              </div>
+            </div>
+          </div>
           <div class="modal-footer">
-            <a
-              class="btn btn-primary full-article"
-              href="#"
-              role="button"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Читать полностью
-            </a>
+            <div class="main-buttons-container">
+              <a
+                class="btn btn-primary original-post-link original-post-button modal__open-original-post-button"
+                href=""
+                role="button"
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+              </a>
+              <!-- <button type="button" class="mark-as-read-button btn btn-secondary"></button> -->
+            </div>
             <button
               type="button"
-              class="btn btn-secondary"
+              class="btn btn-secondary modal__close-button"
               data-bs-dismiss="modal"
             >
               Закрыть
@@ -76,7 +87,7 @@
                         placeholder="Cсылка RSS"
                         autocomplete="off"
                       />
-                      <label class="url-input-label" for="url-input">Ссылка RSS</label>
+                      <label class="url-input-label" for="url-input"></label>
                       <div class="feedback"></div>
                     </div>
                   </div>
@@ -85,9 +96,7 @@
                       type="submit"
                       aria-label="add"
                       class="add url-submit btn btn-lg btn-primary px-sm-5"
-                    >
-                      Добавить
-                    </button>
+                    ></button>
                   </div>
                 </div>
               </form>
@@ -123,16 +132,16 @@
             <div class="posts">
 
               <template id="post-card">
-                <div class="card">
+                <div class="card" data-bs-toggle="modal" data-bs-target="#post-modal">
                   <div class="card-body">
                     <div class="row align-items-center">
                       <div class="col">
-                        <h5 class="card-title">Card title</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                        <h5 class="card-title fw-bold"></h5>
+                        <h6 class="card-subtitle mb-2 text-muted"></h6>
                       </div>
                       <div class="col-auto">
                         <a class="original-post-link" href=""><button type="button" class="original-post-button btn btn-outline-secondary btn-sm align-middle"></button></a>
-                        <button type="button" class="mark-as-read-button btn btn-outline-secondary btn-sm align-middle"></button>
+                        <!-- <button type="button" class="mark-as-read-button btn btn-outline-secondary btn-sm align-middle"></button> -->
                       </div>
                     </div>
                   </div>
@@ -151,8 +160,8 @@
               <template id="channel-card">
                 <div class="card">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <h5 class="card-title"></h5>
+                    <h6 class="card-subtitle mb-2"></h6>
                   </div>
                 </div>
               </template>

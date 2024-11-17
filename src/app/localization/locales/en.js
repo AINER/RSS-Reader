@@ -21,9 +21,10 @@ export default {
     },
     channelsAndPosts: {
       postsTitle: 'Posts',
-      originalPostButton: 'Open source',
-      markAsReadButton: 'Mark as read',
+      originalPostButton: '🌐 Open source',
+      // markAsReadButton: '🔖 Mark as read',
       channelsTitle: 'Feeds',
+      modalCloseButton: 'Close',
     },
     footer: {
       madeBy: 'Made by AINER',
