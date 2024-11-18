@@ -9,7 +9,7 @@ export default {
       label: 'RSS link',
       button: 'Add',
       statusFeedback: {
-        success: 'RSS feed added',
+        success: 'RSS loaded successfully',
         errors: {
           emptyInput: 'Enter a link',
           incorrectLink: 'This is not a link',
@@ -21,6 +21,7 @@ export default {
     },
     channelsAndPosts: {
       postsTitle: 'Posts',
+      postPreviewButton: 'View',
       originalPostButton: '🌐 Open source',
       // markAsReadButton: '🔖 Mark as read',
       channelsTitle: 'Feeds',

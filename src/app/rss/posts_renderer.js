@@ -16,10 +16,14 @@ export default (state, posts) => {
     card.addEventListener('click', (event) => {
       const currentPostId = event.currentTarget.dataset.postId;
       renderModal(state, currentPostId);
+
       event.currentTarget.classList.add('post-read');
+
       const postCardTitle = event.currentTarget.querySelector('.card-title');
       postCardTitle.classList.remove('fw-bold');
       postCardTitle.classList.add('fw-normal');
+
+      card.classList.remove('bg-light');
     });
 
     postsContainer.prepend(postCard);

@@ -146,10 +146,10 @@ a {
 .card {
   transition: 0.2s;
   &:hover {
-    background: rgb(240, 240, 240);
+    background: rgb(230, 230, 230) !important;
   }
   &:active {
-    background: rgb(221, 221, 221);
+    background: rgb(220, 220, 220) !important;
   }
 }
 
