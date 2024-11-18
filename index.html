@@ -11,58 +11,6 @@
 
   <body class="d-flex flex-column min-vh-100">
 
-    <div
-      class="modal fade"
-      id="post-modal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="modal"
-      aria-hidden="false"
-    >
-      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title fw-bold"></h5>
-            <button
-              type="button"
-              class="btn-close close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body text-break">
-            <div class="modal__content"></div>
-            <div class="'modal__info">
-              <div class="d-flex justify-content-between">
-                <p class="modal__post-author fst-italic text-muted"></p>
-                <p class="modal__post-date fst-italic text-muted"></p>
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <div class="main-buttons-container">
-              <a
-                class="btn btn-primary original-post-link original-post-button modal__open-original-post-button"
-                href=""
-                role="button"
-                target="_blank"
-                rel="noopener noreferrer"
-                >
-              </a>
-              <!-- <button type="button" class="mark-as-read-button btn btn-secondary"></button> -->
-            </div>
-            <button
-              type="button"
-              class="btn btn-secondary modal__close-button"
-              data-bs-dismiss="modal"
-            >
-              Закрыть
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <main class="flex-grow-1">
       <div class="bg-light">
         <section class="container-fluid container-xxl p-5">
@@ -172,6 +120,55 @@
         </div>
       </section>
     </main>
+
+    <div
+      class="modal fade"
+      id="post-modal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modal"
+      aria-hidden="false"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fw-bold"></h5>
+            <button
+              type="button"
+              class="btn-close close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body text-break">
+            <div class="modal__content"></div>
+            <div class="'modal__info">
+              <div class="d-flex justify-content-between">
+                <p class="modal__post-author text-muted"></p>
+                <p class="modal__post-date text-muted"></p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="main-buttons-container">
+              <a
+                class="btn btn-primary original-post-link original-post-button modal__open-original-post-button"
+                href=""
+                role="button"
+                target="_blank"
+                rel="noopener noreferrer"
+                ></a>
+              <!-- <button type="button" class="mark-as-read-button btn btn-secondary"></button> -->
+            </div>
+            <button
+              type="button"
+              class="btn btn-secondary modal__close-button"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <footer class="footer fixed-bottom container-fluid border-top py-2 mt-5 bg-light">
       <div class="row">
