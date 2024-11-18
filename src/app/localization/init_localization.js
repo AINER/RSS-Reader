@@ -8,7 +8,9 @@ import renderLocalization from './renderer';
 import activateLanguageSwitcher from './language_switcher';
 
 export default async () => {
-  await i18next.use(LanguageDetector).init({
+  // await i18next.use(LanguageDetector).init({
+  await i18next.init({
+    // supportedLngs: ['en', 'ru'],
     fallbackLng: 'ru',
     debug: true,
     resources: {
