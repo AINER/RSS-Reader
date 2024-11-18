@@ -1,7 +1,7 @@
 /* eslint-disable no-param-reassign */
 
 import i18next from 'i18next';
-import _ from 'lodash';
+import isEmpty from 'lodash/isEmpty';
 
 export default (elements, value) => {
   const render = () => {
@@ -36,7 +36,7 @@ export default (elements, value) => {
       }
     }
 
-    if (_.isEmpty(value)) {
+    if (isEmpty(value)) {
       elements.submit.classList.remove('disabled');
       elements.input.classList.remove('is-invalid', 'is-valid');
       elements.feedback.classList.remove('invalid-feedback', 'valid-feedback');
