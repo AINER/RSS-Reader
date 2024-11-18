@@ -1,2 +1,6 @@
 node_modules/
+
+# --- Webpack ---
 dist/
+public/
+stats.json
