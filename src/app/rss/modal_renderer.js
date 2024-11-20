@@ -5,9 +5,7 @@ export default (state, postId) => {
   modalTitle.textContent = currentPost.title;
 
   const modalContent = document.querySelector('.modal__content');
-  const postText = document.createElement('p');
-  postText.textContent = currentPost.description;
-  modalContent.replaceChildren(postText);
+  modalContent.innerHTML = currentPost.description;
 
   const modalPostAuthor = document.querySelector('.modal__post-author');
   modalPostAuthor.textContent = currentPost.creator;
