@@ -74,6 +74,6 @@ Enter following commands:
 
     make build
     
-Publish __dist__ directory to your hosting.
+Publish __public__ directory to your hosting.
 
  
