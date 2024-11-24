@@ -69,6 +69,22 @@ const config = {
         use: "html-loader",
       },
 
+      {
+        test: /\.(png|jpe?g|webp|gif|svg|)$/i,
+        use: [
+          {
+            loader: `img-optimize-loader`,
+            options: {
+              compress: {
+                // This will take more time and get smaller images.
+                mode: 'high', // 'lossless', 'low'
+                disableOnDevelopment: true,
+              },
+            },
+          },
+        ],
+      },
+
       // Add your rules for custom modules here
       // Learn more about loaders from https://webpack.js.org/loaders/
     ],
