@@ -97,6 +97,7 @@ export default () => {
         trackedState.feeds.push(feed);
       })
       .catch((error) => {
+        console.error('❌ Error:', error);
         trackedState.errors = error.errors;
         if (error.errors === undefined) { // deleting broken link from entered link array
           state.links.pop(currentUrl);
