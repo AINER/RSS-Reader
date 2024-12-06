@@ -2,6 +2,7 @@
 
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 
 const isProduction = process.env.NODE_ENV == "production";
 
@@ -69,24 +70,50 @@ const config = {
         use: "html-loader",
       },
 
-      {
-        test: /\.(png|jpe?g|webp|gif|svg|)$/i,
-        use: [
-          {
-            loader: `img-optimize-loader`,
-            options: {
-              compress: {
-                // This will take more time and get smaller images.
-                mode: 'high', // 'lossless', 'low'
-                disableOnDevelopment: true,
-              },
-            },
-          },
-        ],
-      },
-
       // Add your rules for custom modules here
       // Learn more about loaders from https://webpack.js.org/loaders/
+    ],
+  },
+  optimization: {
+    minimizer: [
+      "...",
+      new ImageMinimizerPlugin({
+        minimizer: {
+          implementation: ImageMinimizerPlugin.imageminMinify,
+          options: {
+            // Lossless optimization with custom option
+            // Feel free to experiment with options for better result for you
+            plugins: [
+              ["gifsicle", { interlaced: true }],
+              ["jpegtran", { progressive: true }],
+              ["optipng", { optimizationLevel: 5 }],
+              // Svgo configuration here https://github.com/svg/svgo#configuration
+              [
+                "svgo",
+                {
+                  plugins: [
+                    {
+                      name: "preset-default",
+                      params: {
+                        overrides: {
+                          removeViewBox: false,
+                          addAttributesToSVGElement: {
+                            params: {
+                              attributes: [
+                                { xmlns: "http://www.w3.org/2000/svg" },
+                              ],
+                            },
+                          },
+                        },
+                      },
+                    },
+                  ],
+                },
+              ],
+            ],
+          },
+        },
+      }),
     ],
   },
 };
