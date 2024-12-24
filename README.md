@@ -2,7 +2,7 @@
   <img align="center" height=85px src="https://cdn-icons-png.flaticon.com/512/17765/17765734.png" />
 </p>
 <h1 align="center">
-  <p>RSS Aggregator</p>
+  <p>RSS Reader</p>
 </h1>
 
 <h3 align="center">
