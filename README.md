@@ -16,7 +16,6 @@ Rss Reader is a service for aggregating RSS feeds, which makes it convenient to 
 ## Development
 [![Maintainability](https://api.codeclimate.com/v1/badges/2a618e1d408cb5b3c1bd/maintainability)](https://codeclimate.com/github/AINER/frontend-project-11/maintainability) 
 [![Linting](https://github.com/AINER/frontend-project-11/actions/workflows/makefile.yml/badge.svg)](https://github.com/AINER/frontend-project-11/actions/workflows/makefile.yml) 
-[![Hexlet-check](https://github.com/AINER/frontend-project-11/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/AINER/frontend-project-11/actions)
 
 Made using <a href="https://en.m.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller">MVC design pattern</a>.
 
@@ -75,5 +74,3 @@ Enter following commands:
     make build
     
 Publish __public__ directory to your hosting.
-
- 
