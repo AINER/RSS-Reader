@@ -1,8 +1,8 @@
 export default {
   translation: {
-    currentLanguage: 'English',
+    currentLanguage: '🇬🇧  English',
     heroSection: {
-      title: 'RSS Aggregator',
+      title: 'RSS Reader',
       description: 'All content at your fingertips. Start reading today!',
     },
     rssUrlForm: {
@@ -13,7 +13,7 @@ export default {
         errors: {
           emptyInput: 'Enter a link',
           incorrectLink: 'This is not a link',
-          duplicatedLink: 'This link is already added',
+          duplicatedLink: 'This RSS feed is already added',
           unsuccessfulRSSParsing: 'Failed to load RSS feed. Check the link.',
         },
       },
@@ -22,8 +22,8 @@ export default {
     channelsAndPosts: {
       postsTitle: 'Posts',
       postPreviewButton: 'View',
-      originalPostButton: '🌐 Open source',
-      // markAsReadButton: '🔖 Mark as read',
+      originalPostButton: '🌐  Open source',
+      // markAsReadButton: '🔖  Mark as read',
       channelsTitle: 'Feeds',
       modalCloseButton: 'Close',
     },

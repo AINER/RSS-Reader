@@ -1,8 +1,8 @@
 export default {
   translation: {
-    currentLanguage: 'Русский',
+    currentLanguage: '🇷🇺  Русский',
     heroSection: {
-      title: 'RSS-агрегатор',
+      title: 'RSS-Ридер',
       description: 'Весь контент на кончиках ваших пальцев. Начните читать уже сегодня!',
     },
     rssUrlForm: {
@@ -13,8 +13,8 @@ export default {
         errors: {
           emptyInput: 'Введите ссылку',
           incorrectLink: 'Это не ссылка',
-          duplicatedLink: 'RSS уже существует',
-          unsuccessfulRSSParsing: 'Ресурс не содержит валидный RSS',
+          duplicatedLink: 'Этот RSS-канал уже добавлен',
+          unsuccessfulRSSParsing: 'Не удалось загрузить RSS-канал. Проверьте ссылку',
         },
       },
       example: 'Пример:',
@@ -22,8 +22,8 @@ export default {
     channelsAndPosts: {
       postsTitle: 'Посты',
       postPreviewButton: 'Просмотр',
-      originalPostButton: 'Читать полностью',
-      // markAsReadButton: '🔖 Пометить прочитанным',
+      originalPostButton: '🌐  Читать полностью',
+      // markAsReadButton: '🔖  Пометить прочитанным',
       channelsTitle: 'Каналы',
       modalCloseButton: 'Закрыть',
     },
