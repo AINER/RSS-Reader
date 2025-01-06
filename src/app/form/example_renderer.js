@@ -1,7 +1,7 @@
 /* eslint-disable no-param-reassign */
 
 export default (elements) => {
-  const exampleLink = 'https://lorem-rss.hexlet.app/feed';
+  const exampleLink = 'https://www.engadget.com/rss.xml';
 
   const exampleLinkElement = document.querySelector('.example-link');
   exampleLinkElement.textContent = exampleLink;
