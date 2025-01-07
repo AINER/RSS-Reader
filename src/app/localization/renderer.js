@@ -25,8 +25,6 @@ export default () => {
   // Rendering of buttons in template (doesn't exist in DOM)
   // ofter initialization of localization and switching of localization
   const postCardTemplate = document.querySelector('#post-card');
-  const postPreviewButtonInTemplate = postCardTemplate.content.querySelector('.post-preview-button');
-  postPreviewButtonInTemplate.textContent = i18next.t('channelsAndPosts.postPreviewButton');
   const originalPostButtonInTemplate = postCardTemplate.content.querySelector('.original-post-button');
   originalPostButtonInTemplate.textContent = i18next.t('channelsAndPosts.originalPostButton');
   // const markAsReadButtonInTemplate = postCardTemplate.content
@@ -35,14 +33,10 @@ export default () => {
 
   // Rendering of buttons in DOM (after sending from template)
   // after switching of localization
-  const postPreviewButton = document.querySelectorAll('.post-preview-button');
   const originalPostButton = document.querySelectorAll('.original-post-button');
 
   // Checking whether one of buttons of the card from template exists
   if (originalPostButton.length !== 0) {
-    postPreviewButton.forEach((element) => {
-      element.textContent = i18next.t('channelsAndPosts.postPreviewButton');
-    });
     originalPostButton.forEach((element) => {
       element.textContent = i18next.t('channelsAndPosts.originalPostButton');
     });
