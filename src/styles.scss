@@ -144,7 +144,9 @@ a {
 }
 
 .card {
-  transition: 0.2s;
+  transition: 0.3s;
+  margin-bottom: 10px;
+
   &:hover {
     background: rgb(230, 230, 230) !important;
   }
